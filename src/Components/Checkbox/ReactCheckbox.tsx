@@ -1,5 +1,5 @@
 import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from "react";
-import S from "./NeonCheckbox.module.css"
+import S from "./ReactCheckbox.module.css"
 
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
 
@@ -8,7 +8,7 @@ type NeonCheckboxPropsType = DefaultInputPropsType & {
     setChecked?: (e: boolean) => void
 }
 
-export const NeonCheckbox: React.FC<NeonCheckboxPropsType> = (
+export const ReactCheckbox: React.FC<NeonCheckboxPropsType> = (
     {onChange, children, setChecked, checked, ...restProps}
     ) => {
 

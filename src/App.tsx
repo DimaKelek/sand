@@ -1,17 +1,22 @@
 import React from 'react';
 import './App.css';
-import {NeonCheckbox} from "./Components/Checkbox/NeonCheckbox";
+import {ReactCheckbox} from "./Components/Checkbox/ReactCheckbox";
 import {Stand} from "./Components/Stand";
+import {MyButton} from "./Components/MyButton/MyButton";
 
 function App() {
 
     return (
         <div className="App">
             <Stand title="Checkbox">
-                <NeonCheckbox>Unchecked</NeonCheckbox>
-                <NeonCheckbox checked={true}>Checked</NeonCheckbox>
-                <NeonCheckbox disabled={true}>Unchecked + Disabled</NeonCheckbox>
-                <NeonCheckbox checked={true} disabled={true}>Checked + Disabled</NeonCheckbox>
+                <ReactCheckbox>Unchecked</ReactCheckbox>
+                <ReactCheckbox checked={true}>Checked</ReactCheckbox>
+                <ReactCheckbox disabled={true}>Unchecked + Disabled</ReactCheckbox>
+                <ReactCheckbox checked={true} disabled={true}>Checked + Disabled</ReactCheckbox>
+            </Stand>
+            <Stand title="Button">
+                <MyButton>Click 1</MyButton>
+                <MyButton disabled>Click 2</MyButton>
             </Stand>
         </div>
     );
